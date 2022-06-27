@@ -41,7 +41,7 @@ class ContaCorrente:
 
 
 # meu programa
-conta_Lucas = ContaCorrente('Lucas', '327.253.848-85')
+conta_Lucas = ContaCorrente('Lucas', '111.222.333-45')
 conta_Lucas.consultar_saldo()
 
 # depositando um valor qualquer
