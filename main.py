@@ -1,16 +1,18 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from ContasBancos import ContaCorrente, CartaoCredito
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+# meu programa
+conta_Lucas = ContaCorrente('Lucas', '111.222.333-45', 1234, 2323-0)
+conta_Leticia = ContaCorrente('Leticia', '222.254.236-87',  1234, 2424-0)
+
+cartao_Lucas = CartaoCredito('Lucas', conta_Lucas)
+
+print(conta_Lucas.cartoes[0]._titular)
+print(cartao_Lucas._num)
+print(cartao_Lucas._validade)
+print(cartao_Lucas._cod_seguranca)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+cartao_Lucas.senha = '258'
+print(cartao_Lucas._senha)
